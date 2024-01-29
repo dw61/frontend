@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <link rel="stylesheet" href="css.css" type="text/css">
+</head>
+<body>
+    <div class="main">
+        <p id="abc" class="para-elem">Direct children of main</p>
+        <div>
+            <p class="para-elem">Indirect children of main</p>
+        </div>
+        <ul>
+            <li>li1</li>
+            <li>li2</li>
+            <li>li3</li>
+        </ul>
+        <p class="para-elem">Direct children of main</p>
+        <p class="para-elem">The last CSS takes precedence</p>
+        <p class="para-elem">id > class > tag, regardless of location in CSS</p>
+        <p class="para-elem">combinators are more specific</p>
+        <p class="para-elem">specification: number of ID, then class, then tag</p>
+        <p class="para-elem">HTML inline styles take precedent over any .css</p>
+        <p class="para-elem">but <span style="color: violet; font-family: monospace;">!important</span> takes precedence even in .css</p>
+    </div>
+    <div class="footer">
+        <div class="intermediate">
+            <p>Footer</p>
+        </div>
+    </div>
+    <div>
+        <p class="1">1</p>
+        <p>2</p>
+    </div>
+    <div>
+        <p class="parallel1">some text</p>
+        <p class="parallel2">some text</p>
+        <p class="parallel3">some text</p>
+    </div>
+    <button>hover me</button>
+</body>
+</html>

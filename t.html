@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        button {
+            background-color: transparent;
+            border: 1px solid navy;
+            padding: 20px;
+            font-size: 1.4rem; 
+        }
+        button:hover {
+            background-color: navy;
+            border: none;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <button>CLICK ME</button>
+    <script>
+        function onClickEvent() {
+            let e1 = document.createElement("p");
+            e1.innerText = "Clicked the button";
+            document.querySelector("body").appendChild(e1);
+        }
+        document.querySelector("button").onclick = onClickEvent;
+    </script>
+</body>
+</html>

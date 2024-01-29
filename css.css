@@ -1,0 +1,27 @@
+/* css selectors */
+/* .footer .intermediate p is not necessary */
+
+.footer p {
+    color: green;
+}
+
+.main > p {
+    color: red;
+}
+
+li + li {
+    color: blue;
+}
+
+p[class="1"] {
+    color: blue;
+}
+
+.parallel1, .parallel2 {
+    color: orange;
+}
+
+button:hover {
+    cursor: pointer;
+    opacity: 0.2;
+}
